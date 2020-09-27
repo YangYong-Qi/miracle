@@ -1,0 +1,58 @@
+{
+  "id": "2041750",
+  "name": "miracle",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4308528",
+      "name": "健康",
+      "font_class": "tubiaozhizuomoban",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "2356560",
+      "name": "全屏",
+      "font_class": "screenfull",
+      "unicode": "e824",
+      "unicode_decimal": 59428
+    },
+    {
+      "icon_id": "9844402",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "16020767",
+      "name": "折叠1",
+      "font_class": "zhedie1",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "689212",
+      "name": "表单 页面",
+      "font_class": "biaodanyemian",
+      "unicode": "e7cc",
+      "unicode_decimal": 59340
+    },
+    {
+      "icon_id": "4143528",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "7239716",
+      "name": "dashboard",
+      "font_class": "dashboard",
+      "unicode": "e726",
+      "unicode_decimal": 59174
+    }
+  ]
+}

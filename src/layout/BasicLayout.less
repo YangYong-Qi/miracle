@@ -1,0 +1,70 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f5f7f9;
+}
+.header {
+    position: absolute;
+    left: 255px;
+    top: 0;
+    right: 0;
+    padding: 0 20px;
+    background-color: #ffffff;
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    transition: all 0.3s;
+}
+.aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #191a23;
+    width: 255px;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.3s;
+    .horizontal-collapse-transition {
+        transition: 0s width ease-in-out, 0s padding-left ease-in-out,
+            0s padding-right ease-in-out;
+    }
+}
+
+.main {
+    position: absolute;
+    left: 255px;
+    top: 61px;
+    bottom: 0;
+    right: 0;
+    padding: 0 15px 15px 15px;
+    background: #f5f7f9;
+    overflow-x: hidden;
+    transition: all 0.3s;
+}
+.main-router {
+    background: #ffffff;
+    min-height: calc(100vh - 150px);
+    border-radius: 4px;
+    padding: 15px;
+}
+// 缩小
+.layout-min-header {
+    left: 65px;
+
+    transition: all 0.3s;
+}
+.layout-min-aside {
+    width: 65px;
+    transition: all 0.3s;
+    .menu-tree-title {
+        display: none;
+    }
+}
+.layout-min-main {
+    left: 65px;
+    transition: all 0.3s;
+}
