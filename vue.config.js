@@ -1,6 +1,8 @@
 module.exports = {
     chainWebpack: () => {},
     configureWebpack: () => {},
+    lintOnSave: true,
+    productionSourceMap: false,
     devServer: {
         open: true,
         port: 3000,
@@ -8,11 +10,11 @@ module.exports = {
         hotOnly: false,
         proxy: {
             '/api': {
-                target: 'http://localhost:8880',
+                target: 'http://192.168.1.155:81',
                 changeOrigin: true,
                 secure: false,
                 pathRewrite: {
-                    '^/api': '/static/mock'
+                    '^/api': ''
                 }
             }
         }

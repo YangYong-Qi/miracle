@@ -1,10 +1,11 @@
 import axios from 'axios'
 import { showLoading, hideLoading } from './loading'
 import { Message } from 'element-ui'
-axios.defaults.baseURL = process.env.VUE_APP_APi
+//axios.defaults.baseURL = process.env.VUE_APP_APi
 axios.defaults.timeout = 10000
+// axios.defaults.withCredentials = true
 axios.defaults.headers.post['Content-Type'] =
-    'multipart/form-data;charset=UTF-8'
+    'application/x-www-form-urlencoded'
 axios.interceptors.request.use(
     config => {
         showLoading()
@@ -14,14 +15,17 @@ axios.interceptors.request.use(
         return Promise.error(error)
     }
 )
+
 axios.interceptors.response.use(
     response => {
         hideLoading()
         if (response.data.state == 'error') {
             Message.error(response.data.message)
-            return Promise.reject(response)
+            //return Promise.reject(response)
+            return response
         } else {
-            return Promise.resolve(response)
+            //return Promise.resolve(response)
+            return response
         }
     },
 

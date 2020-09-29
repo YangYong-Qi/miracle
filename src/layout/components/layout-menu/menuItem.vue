@@ -18,7 +18,7 @@
                 </label>
             </el-submenu>
             <el-menu-item
-                v-else
+                v-else-if="!item.meta.hidden"
                 :index="
                     item.children && item.children.length == 1
                         ? item.children[0].name

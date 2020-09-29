@@ -101,11 +101,6 @@ section {
 }
 body {
     line-height: 1;
-    -moz-user-select: none; /*火狐*/
-    -webkit-user-select: none; /*webkit浏览器*/
-    -ms-user-select: none; /*IE10*/
-    -khtml-user-select: none; /*早期浏览器*/
-    user-select: none;
 }
 ol,
 ul {
@@ -146,4 +141,10 @@ table {
 }
 .table-top-select {
     width: 100px;
+}
+.show-overflow {
+    cursor: pointer;
+    text-overflow: ellipsis; /*只是起到注解作用*/
+    white-space: nowrap; /*不让文本换行*/
+    overflow: hidden; /*超出的部分显示...*/
 }

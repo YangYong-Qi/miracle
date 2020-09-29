@@ -1,5 +1,5 @@
 import { queryPermissionsByUser } from '@/api/api'
-
+import { constantRoutes } from '../../router/router.config'
 const user = {
     state: {
         isCollapse: false,
@@ -25,7 +25,7 @@ const user = {
     },
     mutations: {
         SET_PERMISSIONLIST: (state, permissionList) => {
-            state.permissionList = permissionList
+            state.permissionList = constantRoutes.concat(permissionList)
         },
         SET_COLLAPSE: state => {
             state.isCollapse = !state.isCollapse

@@ -45,41 +45,90 @@
                 fixed="left"
                 width="55"
             ></el-table-column>
-
             <el-table-column
-                prop="date"
+                prop="Picture"
                 align="center"
-                label="日期"
+                label="头像"
                 width="120"
             >
             </el-table-column>
             <el-table-column
-                prop="name"
+                prop="RealName"
                 align="center"
                 label="姓名"
                 width="120"
             >
             </el-table-column>
-            <el-table-column prop="address" show-overflow-tooltip label="地址1">
-            </el-table-column>
-            <el-table-column prop="address" show-overflow-tooltip label="地址2">
-            </el-table-column>
-            <el-table-column prop="address" show-overflow-tooltip label="地址3">
-            </el-table-column>
-            <el-table-column prop="address" show-overflow-tooltip label="地址4">
-            </el-table-column>
-            <el-table-column prop="address" show-overflow-tooltip label="地址5">
-            </el-table-column>
-            <el-table-column prop="address" show-overflow-tooltip label="地址6">
-            </el-table-column>
-            <el-table-column prop="address" show-overflow-tooltip label="地址7">
+            <el-table-column prop="Sex" align="center" label="性别" width="120">
             </el-table-column>
             <el-table-column
-                fixed="right"
-                label="操作"
-                width="100"
+                prop="UserPhone"
                 align="center"
+                label="会员电话"
+                width="120"
             >
+            </el-table-column>
+
+            <el-table-column
+                prop="MINumber"
+                align="center"
+                label="医保卡号"
+                width="120"
+            >
+            </el-table-column>
+
+            <el-table-column prop="IDCard" align="center" label="身份证">
+                <template slot-scope="scope">
+                    <el-popover
+                        placement="bottom"
+                        width="200"
+                        trigger="click"
+                        :content="scope.row.IDCard"
+                    >
+                        <p class="show-overflow" slot="reference">
+                            {{ scope.row.IDCard }}
+                        </p>
+                    </el-popover>
+                </template>
+            </el-table-column>
+
+            <el-table-column
+                prop="AllPay"
+                align="center"
+                label="累计消费"
+                width="120"
+            >
+            </el-table-column>
+            <el-table-column
+                prop="Number"
+                align="center"
+                label="健康得分"
+                width="120"
+            >
+            </el-table-column>
+            <el-table-column
+                prop="Number"
+                align="center"
+                label="健康得分"
+                width="120"
+            >
+            </el-table-column>
+            <el-table-column
+                prop="FamilyNum"
+                align="center"
+                label="家庭圈排名"
+                width="120"
+            >
+            </el-table-column>
+            <el-table-column
+                prop="FriendNum"
+                align="center"
+                label="朋友圈排名"
+                width="120"
+            >
+            </el-table-column>
+
+            <el-table-column width="120" label="操作" align="center">
                 <!-- slot-scope="scope" -->
                 <template>
                     <el-button type="text">编辑</el-button>

@@ -14,6 +14,7 @@ import {
     Row,
     Input,
     Pagination,
+    Popover,
     TableColumn,
     Drawer,
     Form,
@@ -30,12 +31,14 @@ import {
     DropdownItem,
     DropdownMenu,
     CheckboxGroup,
+    Upload,
     TimePicker,
     DatePicker,
     Option,
     Switch,
     RadioGroup
 } from 'element-ui'
+Vue.component(Upload.name, Upload)
 Vue.component(DropdownMenu.name, DropdownMenu)
 Vue.component(DropdownItem.name, DropdownItem)
 Vue.component(Dropdown.name, Dropdown)
@@ -51,6 +54,7 @@ Vue.component(Select.name, Select)
 Vue.component(Menu.name, Menu)
 Vue.component(MenuItem.name, MenuItem)
 Vue.component(Submenu.name, Submenu)
+Vue.component(Popover.name, Popover)
 Vue.component(Container.name, Container)
 Vue.component(Aside.name, Aside)
 Vue.component(Main.name, Main)

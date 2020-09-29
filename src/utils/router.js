@@ -14,7 +14,8 @@ function filterAsyncRouter(asyncRouterMap) {
             } else {
                 route.component = require('@/views/' +
                     route.component +
-                    '.vue').default
+                    '/' +
+                    'index.vue').default
             }
         }
         if (!route.meta) {

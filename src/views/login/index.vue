@@ -77,10 +77,10 @@ export default {
             let res = await checkLogin({
                 ...this.form,
                 password: this.$md5(this.form.password)
-            }).catch(() => {})
+            })
             if (res.state == 'success') {
                 this.$message.success(res.message)
-                setData('uid', res.data.uid)
+                setData('userInfo', res.data)
                 this.$router.push({
                     path: '/'
                 })
@@ -177,6 +177,7 @@ input {
     font-size: 14px;
     cursor: pointer;
     text-align: right;
+    margin-top: 10px;
 }
 .login-button {
     width: 250px;
